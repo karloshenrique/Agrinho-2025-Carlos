@@ -9,6 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -32,6 +33,7 @@ main {
     padding: 20px 0;
 }
 
+/* Container centralizado */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -44,6 +46,7 @@ h2 {
     color: #3b9f47;
 }
 
+/* Seções com fundo branco e sombra */
 .intro, .eventos, .imagem, .contato {
     background-color: white;
     margin-bottom: 40px;
@@ -52,6 +55,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Listas de eventos sem marcação */
 ul {
     list-style: none;
     padding-left: 0;
@@ -61,12 +65,14 @@ ul li {
     margin-bottom: 10px;
 }
 
+/* Imagem do evento */
 .imagem img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
+/* Estilizando o formulário */
 form label {
     display: block;
     font-size: 1rem;
@@ -79,8 +85,10 @@ form input, form textarea {
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
+/* Botão do formulário */
 form button {
     background-color: #3b9f47;
     color: white;
@@ -88,12 +96,20 @@ form button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
 }
 
 form button:hover {
     background-color: #2a8e35;
+    transform: translateY(-2px);
 }
 
+form button:active {
+    transform: translateY(0);
+}
+
+/* Rodapé */
 footer {
     background-color: #333;
     color: white;
@@ -103,4 +119,63 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .intro, .eventos, .imagem, .contato {
+        padding: 15px;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        padding: 12px 18px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
 }

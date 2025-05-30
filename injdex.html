@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Festejando a união entre a vida rural e urbana através de eventos culturais, feiras e oficinas.">
+    <meta name="keywords" content="campo, cidade, conexão, evento, cultura, agricultura, sustentabilidade">
+    <meta name="author" content="Festejando a Conexão">
     <title>Festejando a Conexão Campo e Cidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,49 +14,56 @@
         <div class="container">
             <h1>Festejando a Conexão Campo e Cidade</h1>
             <p>Celebrando a união entre a vida rural e urbana</p>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introdução</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section class="intro">
+        <section id="intro" class="intro">
             <div class="container">
                 <h2>Conexão que Transforma</h2>
                 <p>A conexão entre o campo e a cidade é um símbolo de integração e transformação. Este evento celebra o que cada um tem a oferecer, promovendo um ambiente de troca cultural, respeito e desenvolvimento sustentável.</p>
             </div>
         </section>
 
-        <section class="eventos">
+        <section id="eventos" class="eventos">
             <div class="container">
                 <h2>Eventos e Atividades</h2>
                 <ul>
-                    <li>Feira de Produtos Orgânicos</li>
-                    <li>Oficina de Agricultura Sustentável</li>
-                    <li>Roda de Conversa: Desafios do Campo e da Cidade</li>
-                    <li>Apresentações Culturais: Música e Dança</li>
+                    <li><strong>Feira de Produtos Orgânicos</strong></li>
+                    <li><strong>Oficina de Agricultura Sustentável</strong></li>
+                    <li><strong>Roda de Conversa: Desafios do Campo e da Cidade</strong></li>
+                    <li><strong>Apresentações Culturais: Música e Dança</strong></li>
                 </ul>
             </div>
         </section>
 
         <section class="imagem">
             <div class="container">
-                <img src="https://via.placeholder.com/1200x500" alt="Campo e cidade">
+                <img src="https://via.placeholder.com/1200x500" alt="Campo e cidade, imagem ilustrativa da convivência entre o rural e o urbano">
                 <p>Celebrando a beleza da convivência entre o rural e o urbano.</p>
             </div>
         </section>
 
-        <section class="contato">
+        <section id="contato" class="contato">
             <div class="container">
                 <h2>Entre em Contato</h2>
                 <p>Quer saber mais sobre nossos eventos ou sugerir novas ideias? Fale conosco!</p>
-                <form>
+                <form action="#" method="POST">
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
                     
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required placeholder="Seu e-mail">
 
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <textarea id="mensagem" name="mensagem" required placeholder="Sua mensagem..."></textarea>
 
                     <button type="submit">Enviar</button>
                 </form>
